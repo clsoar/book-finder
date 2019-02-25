@@ -2,19 +2,20 @@ import React, { Component } from 'react'
 
 class Book extends Component {
   render() {
+    let availableThumbnail = this.props.book.imageLinks ?
+    this.props.book.imageLinks.thumbnail : '';
     return (
       <div className="book">
-        <div className="book-image"></div>
+        <div className="book-image"><img src={availableThumbnail} alt="Book Cover"/> </div>
         <div className="book-info">
-          <div className="book-title"></div>
-          <div className="book-author"></div>
-          <div className="book-publishing-co"></div>
-          <div className="book-title"></div>
+          <div className="book-title">{this.props.book.title}</div>
+          <div className="book-author">{this.props.book.author}</div>
+          <div className="book-publishing-co">{this.props.book.publisher}</div>
         </div>
         <div className="more-book-info">
         <a
           className="book-info-link"
-          href="https://reactjs.org"
+          href={this.props.book.infoLink}
           target="_blank"
           rel="noopener noreferrer">
           Learn More
