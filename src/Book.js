@@ -15,7 +15,8 @@ class Book extends Component {
         <a
           className="book-info-link"
           href="https://reactjs.org"
-          target="_blank">
+          target="_blank"
+          rel="noopener noreferrer">
           Learn More
         </a>
         </div>
