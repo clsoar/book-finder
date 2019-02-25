@@ -18,7 +18,7 @@ class Book extends Component {
           href={this.props.book.infoLink}
           target="_blank"
           rel="noopener noreferrer">
-          Learn More
+          More Info
         </a>
         </div>
       </div>
