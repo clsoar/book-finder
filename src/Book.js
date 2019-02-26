@@ -1,4 +1,6 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import './App.css';
+
 
 class Book extends Component {
   render() {
@@ -6,7 +8,11 @@ class Book extends Component {
     this.props.book.imageLinks.thumbnail : '';
     return (
       <div className="book">
-        <div className="book-image"><img src={availableThumbnail} alt="Book Cover"/> </div>
+        <div
+          className="book-image"
+          style={{backgroundImage: `url("${availableThumbnail}")`}}
+          alt="Book Cover">
+        </div>
         <div className="book-info">
           <div className="book-title">{this.props.book.title}</div>
           <div className="book-author">{this.props.book.author}</div>
