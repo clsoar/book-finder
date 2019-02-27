@@ -15,23 +15,19 @@ class Book extends Component {
         </div>
         <div className="book-info">
           <div className="book-title">{this.props.book.title}</div>
-          <div className="book-author">{this.props.book.author}</div>
-          <div className="book-publishing-co">{this.props.book.publisher}</div>
+          <div className="book-author"><b>By:</b> {(this.props.book.authors) ? this.props.book.authors : "Anon"}</div>
+          <div className="book-publishing-co"><b>Publisher:</b> {(this.props.book.publisher) ? this.props.book.publisher : "None Listed" }</div>
         </div>
         <div className="more-book-info">
-        <a
-          className="book-info-link"
-          href={this.props.book.infoLink}
-          target="_blank"
-          rel="noopener noreferrer">
-          More Info
-        </a>
+          <a
+            className="book-info-link"
+            href={this.props.book.infoLink}
+            target="_blank"
+            rel="noopener noreferrer">
+            More Info
+          </a>
         </div>
       </div>
-
-
-
-
     )
   }
 }
