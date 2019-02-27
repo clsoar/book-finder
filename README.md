@@ -33,15 +33,15 @@ A list of books will appear displaying the book cover, title, authors, publishin
 
 Book Finder App in action on a laptop or desktop:
 
-![App displayed on desktop](book-finder/app-full-screen.PNG)
+![App displayed on desktop](/app-full-screen.PNG?raw=true "Large Screen Demo")
 
 On a tablet:
 
-![App displayed on tablet](book-finder/app-tablet.PNG)
+![App displayed on tablet](/app-tablet.PNG?raw=true "Medium Screen Demo")
 
 On a phone:
 
-![App displayed on phone](book-finder/app-iphone.PNG)
+![App displayed on phone](/app-iphone.PNG?raw=true "Small Screen Demo")
 
 ### Dependencies
 
