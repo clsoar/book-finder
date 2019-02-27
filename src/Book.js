@@ -15,7 +15,7 @@ class Book extends Component {
         </div>
         <div className="book-info">
           <div className="book-title">{this.props.book.title}</div>
-          <div className="book-author"><b>By:</b> {(this.props.book.authors) ? this.props.book.authors : "Anon"}</div>
+          <div className="book-author"><b>By:</b> {(this.props.book.authors) ? this.props.book.authors.join(", ") : "Anon"}</div>
           <div className="book-publishing-co"><b>Publisher:</b> {(this.props.book.publisher) ? this.props.book.publisher : "None Listed" }</div>
         </div>
         <div className="more-book-info">

@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #282c34;
 }
 
 .App-header {
@@ -11,6 +12,7 @@
   justify-content: center;
   color: white;
   padding-bottom: 10px;
+  border-bottom: 3px solid #ddd;
 }
 
 .submit-button {
@@ -35,9 +37,14 @@
 .books-list li {
   margin: 2px;
   align-self: stretch;
-  border: 8px solid #555;
-  border-radius: 18px
+  border: 8px solid #eee;
+  border-radius: 18px;
+  background-color: #ddd;
 
+}
+
+.books-list p {
+  color: #eee;
 }
 
 .book {
